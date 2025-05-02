@@ -1,9 +1,11 @@
 import React from 'react'
-import './statsBar.module.css'
+import styles from './statsBar.module.css';
 
 const StatsBar:React.FC = () => {
   return (
-    <div>statsBar</div>
+    <section>
+      statsBar
+    </section>
   )
 }
 
