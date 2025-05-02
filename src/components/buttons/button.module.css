@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.button {
+    @apply flex items-center w-full text-zinc-50 px-14 py-3 rounded-md transition-colors
+    bg-white/10;
+}
+
+.text {
+    display: inline-block;
+    margin-left: 10px;
+}
