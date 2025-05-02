@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from './dashboard.module.css'
 import Sidebar from '../../components/sidebar/sidebar'
-import StatsBar from '../../components/statsBar/statsBar'
+import MainBoard from '../../components/mainBoard/mainBoard'
 
 const Dashboard:React.FC = () => {
   return (
     <section className={styles.dashboard}>
         <Sidebar />
-        <StatsBar />
+        <MainBoard />
     </section>
   )
 }
