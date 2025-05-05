@@ -57,7 +57,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-weight: 500;
 }
 
 .carStatus::before {
@@ -70,7 +69,6 @@
 }
 
 .carEarning {
-  font-weight: 500;
   color: #111;
 }
 
