@@ -1,0 +1,53 @@
+
+
+.card {
+  @apply bg-white rounded-lg shadow-sm p-4 mb-4 max-w-md;
+}
+
+.header {
+  @apply flex justify-between items-center text-gray-500 text-sm mb-3;
+}
+
+.number {
+  @apply font-medium;
+}
+
+.carNumber {
+  @apply font-medium;
+}
+
+.driver {
+  @apply text-lg font-semibold text-gray-800 mb-2;
+}
+
+.statusContainer {
+  @apply flex items-center gap-2 text-sm mb-3;
+}
+
+.statusIcon {
+  @apply w-5 h-5;
+}
+
+.completed {
+  @apply text-green-500;
+}
+
+.pending {
+  @apply text-orange-500;
+}
+
+.inRoute {
+  @apply text-blue-500;
+}
+
+.statusText {
+  @apply text-gray-600;
+}
+
+.earning {
+  @apply ml-auto text-gray-700 font-medium;
+}
+
+.detailsButton {
+  @apply text-blue-500 hover:text-blue-700 text-sm font-medium transition-colors;
+}
