@@ -27,7 +27,7 @@ const Sidebar: React.FC = () => {
       className={`${styles.navLink} ${activeLink === label ? styles.active : ""}`}
       onClick={() => handleSetActive(label)}
     >
-      <IconContext.Provider value={{ color: "white", size: "1.5rem" }}>
+      <IconContext.Provider value={{ color: "#ffffffcc", size: "1.5rem" }}>
         {icon}
       </IconContext.Provider>
       <h3>{label}</h3>

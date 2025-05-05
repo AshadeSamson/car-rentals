@@ -12,6 +12,11 @@
 }
 
 
+html, body {
+  font-family: 'Inter', sans-serif;
+}
+
+
 #root {
   /* max-width: 1300px; */
   margin: 0 auto;
