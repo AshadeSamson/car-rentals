@@ -1,13 +1,18 @@
 import React from 'react'
+import styles from './summaryBar.module.css'
 import CarAvailabilityCard from '../cards/carAvailability/carAvailability'
-import CarStats from '../cards/carStatusCard'
+import CarStatusCard from '../cards/carStatus/carStatus'
+import ChartCard from '../cards/chartCard/chartCard'
+import TopBar from '../cards/topBar/topBar'
 
 const SummaryBar:React.FC = () => {
+
   return (
-    <section>
-      <div></div>
+    <section className={styles.summaryBar}>
+      <TopBar />
       <CarAvailabilityCard />
-      <CarStats />
+      <CarStatusCard />
+      <ChartCard />
     </section>
   )
 }

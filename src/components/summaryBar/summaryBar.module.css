@@ -1,0 +1,18 @@
+.summaryBar {
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.summaryBar > * {
+    margin-left: 0;
+    padding-left: 0;
+  }
+    .summaryBar > *:first-child {
+        margin-left: 0;
+        padding-left: 0;
+    }
+  
