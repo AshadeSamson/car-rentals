@@ -1,9 +1,13 @@
 import React from 'react'
+import CarAvailabilityCard from '../cards/carAvailability/carAvailability'
+import CarStats from '../cards/carStatusCard'
 
 const SummaryBar:React.FC = () => {
   return (
     <section>
-      summaryBar
+      <div></div>
+      <CarAvailabilityCard />
+      <CarStats />
     </section>
   )
 }

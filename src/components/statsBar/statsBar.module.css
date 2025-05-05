@@ -1,1 +1,20 @@
-@import "tailwindcss";
+
+.statsBar {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(245, 239, 239);
+}
+
+.statsDate {
+    @apply text-left;
+}
+
+.statsDate h3 {
+    @apply text-2xl;
+}
+
+.statsDate p {
+    @apply text-sm text-gray-400;
+}
