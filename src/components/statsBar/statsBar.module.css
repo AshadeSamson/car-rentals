@@ -18,3 +18,8 @@
 .statsDate p {
     @apply text-sm text-gray-400;
 }
+
+
+@media (max-width: 768px) {
+
+}

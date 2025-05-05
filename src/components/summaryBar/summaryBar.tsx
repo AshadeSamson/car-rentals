@@ -11,8 +11,8 @@ const SummaryBar:React.FC = () => {
     <section className={styles.summaryBar}>
       <TopBar />
       <CarAvailabilityCard />
-      <CarStatusCard />
-      <ChartCard />
+      {/* <CarStatusCard /> */}
+      {/* <ChartCard /> */}
     </section>
   )
 }

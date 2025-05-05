@@ -1,4 +1,34 @@
 .dashboard {
     display: grid;
     grid-template-columns: 250px 1fr;
-}
+  }
+  
+ 
+  .sidebarWrapper {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .dashboard {
+      grid-template-columns: 1fr;
+    }
+  
+    .sidebarWrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: white;
+      width: 250px;
+      height: 100%;
+      transform: translateX(-100%);
+      z-index: 999;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .sidebarWrapper.open {
+      transform: translateX(0);
+    }
+  
+  }
+  
