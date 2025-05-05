@@ -10,7 +10,7 @@ const CarAvailabilityCard:React.FC = () => {
     <div className={styles.carAvailabilityCard}>
       <h3 className={styles.cacHeading}>Car Availability</h3>
 
-      <div className="flex flex-wrap gap-4 items-center">
+      <div className="flex flex-wrap gap-8 md:gap-4 items-center">
         {/* Car Number */}
         <div className="flex items-center justify-between border rounded-md px-4 py-2 text-gray-600 w-60">
           <div className="flex items-center">
@@ -31,7 +31,7 @@ const CarAvailabilityCard:React.FC = () => {
 
         <div className='flex items-center border rounded-md text-gray-600'>
           {/* Date */}
-          <div className="flex items-center px-4 py-2 text-gray-600 w-50 border-r">
+          <div className="flex items-center px-2 py-2 text-gray-600 w-50 border-r">
             <IconContext.Provider value={{ size: "1rem" }}>
               <FaCalendar className="mr-3" />
             </IconContext.Provider>
@@ -39,7 +39,7 @@ const CarAvailabilityCard:React.FC = () => {
           </div>
 
           {/* Time */}
-          <div className={`flex items-center px-4 py-2 text-gray-600 w-40 ${styles.time}`}>
+          <div className={`flex items-center px-2 py-2 text-gray-600 w-40 ${styles.time}`}>
             <IconContext.Provider value={{ size: "1.5rem" }}>
               <FaClock className="mr-3" />
             </IconContext.Provider>

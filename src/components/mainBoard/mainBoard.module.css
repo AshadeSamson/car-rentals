@@ -1,5 +1,18 @@
-
 .main {
     display: grid;
     grid-template-columns: 320px 1fr;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+    .main {
+      display: flex;
+      flex-direction: column-reverse;
+      flex: 1;
+      margin: 0 auto;
+      text-align: center;
+    }
 }

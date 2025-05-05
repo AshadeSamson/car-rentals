@@ -7,8 +7,11 @@ import { RiExchangeCnyFill } from "react-icons/ri";
 import { TbBrandBooking } from "react-icons/tb";
 import Button from '../buttons/button';
 import Logo from '../../assets/Logo.png';
+import { useSidebar } from '../../context/mobileMenuContext';
 
 const Sidebar: React.FC = () => {
+
+  const { isSidebarOpen } = useSidebar();
   const [activeLink, setActiveLink] = useState("Dashboard");
 
   const handleSetActive = (label: string) => {
@@ -35,7 +38,7 @@ const Sidebar: React.FC = () => {
   );
 
   return (
-    <section className={styles.sidebar}>
+    <section className={`${styles.sidebar} ${isSidebarOpen ? styles.openSidebar : ''}`}>
       <div className={styles.logo}>
         <img src={Logo} alt="Company Logo" />
       </div>

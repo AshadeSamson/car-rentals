@@ -1,33 +1,39 @@
-
 .statCardBox {
     @apply bg-white rounded-xl shadow p-5 w-full max-w-sm;
-}
-
-.statCardRow1 {
+    @apply md:max-w-full; /* Allow full width on small screens */
+  }
+  
+  .statCardRow1 {
     @apply flex justify-between items-start mb-4 border-b-2 border-solid border-gray-100 pb-2;
-}
-
-.statCardRow1 h3 {
-    @apply text-gray-600 font-semibold;
-}
-
-.statCardRow1 span {
+    @apply flex-wrap gap-2; /* Better wrapping support on narrow screens */
+  }
+  
+  .statCardRow1 h3 {
+    @apply text-gray-600 font-semibold text-base sm:text-lg;
+  }
+  
+  .statCardRow1 span {
     @apply bg-gray-100 text-sm text-gray-600 px-3 py-1 rounded-md;
-}
-
-.statCardRow2 {
-    @apply flex justify-between items-baseline space-x-4 mb-2;
-}
-
-.statCardRow2Amount {
-    @apply text-3xl font-bold text-black;
-}
-
-.statCardRow2Percent {
+  }
+  
+  .statCardRow2 {
+    @apply flex justify-between items-baseline flex-wrap gap-2 mb-2;
+  }
+  
+  .statCardRow2Amount {
+    @apply text-2xl sm:text-3xl font-bold text-black;
+  }
+  
+  .statCardRow2Percent {
     @apply flex items-center space-x-1 text-sm font-medium;
-}
-
-.statCardRow3 {
+  }
+  
+  .statCardRow3 {
     @apply text-sm text-gray-500 mb-2 text-left;
-
-}
+  }
+  
+  /* Optional: responsive spacing for the bottom row */
+  .statCardBottom {
+    @apply flex justify-between items-center text-sm text-gray-700 font-medium flex-wrap gap-2;
+  }
+  

@@ -1,15 +1,15 @@
 .card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 100%;
-    max-width: 850px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
   
   .header {
     display: flex;
@@ -40,6 +40,20 @@
   }
   
   .chartContainer {
-    flex: 1;
+    position: relative;
+    width: 100%;
+    height: 250px;
+  }
+
+
+
+  @media (max-width: 640px) {
+    .chartContainer {
+      height: 200px;
+    }
+  
+    .dateRange {
+      font-size: 11px;
+    }
   }
   

@@ -15,4 +15,15 @@
         margin-left: 0;
         padding-left: 0;
     }
-  
+    
+    
+    
+    
+    
+@media (max-width: 768px) {
+    .summaryBar{
+        margin-top: 60px;
+    }
+}
+
+

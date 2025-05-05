@@ -42,7 +42,7 @@ const StatCard: React.FC<StatCardProps> = ({
         </div>
       </div>
       <p className={styles.statCardRow3}>Compared to {comparedValue} yesterday</p>
-      <div className="flex justify-between items-center text-sm text-gray-700 font-medium">
+      <div className="flex justify-between items-center text-sm text-gray-700 font-medium flex-wrap gap-2">
         <span>{lastWeekLabel}</span>
         <span>{lastWeekAmount}</span>
       </div>
