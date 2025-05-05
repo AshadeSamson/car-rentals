@@ -15,7 +15,7 @@ const CarAvailabilityCard:React.FC = () => {
         <div className="flex items-center justify-between border rounded-md px-4 py-2 text-gray-600 w-60">
           <div className="flex items-center">
             <IconContext.Provider value={{ size: "1.5rem" }}>
-              <FaCar className="mr-2" />
+              <FaCar className="mr-3" />
             </IconContext.Provider>
           <select className="bg-transparent w-full outline-none appearance-none">
             <option>Car number</option>
@@ -33,7 +33,7 @@ const CarAvailabilityCard:React.FC = () => {
           {/* Date */}
           <div className="flex items-center px-4 py-2 text-gray-600 w-50 border-r">
             <IconContext.Provider value={{ size: "1rem" }}>
-              <FaCalendar className="mr-4" />
+              <FaCalendar className="mr-3" />
             </IconContext.Provider>
             <p>2022-11-20</p>
           </div>
@@ -41,7 +41,7 @@ const CarAvailabilityCard:React.FC = () => {
           {/* Time */}
           <div className={`flex items-center px-4 py-2 text-gray-600 w-40 ${styles.time}`}>
             <IconContext.Provider value={{ size: "1.5rem" }}>
-              <FaClock className="mr-4" />
+              <FaClock className="mr-3" />
             </IconContext.Provider>
             <select className="bg-transparent w-full outline-none appearance-none">
               <option>10 AM</option>

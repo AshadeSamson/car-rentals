@@ -1,0 +1,87 @@
+.carStatsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.carStatsTable thead {
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.carStatsTable th,
+.carStatsTable td {
+  padding: 16px 20px;
+}
+
+.carStatsTable th {
+  font-weight: 600;
+  color: #555;
+  font-size: 13px;
+}
+
+.carStatsTable tbody tr {
+  border-top: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+.carStatsTable tbody tr:hover {
+  background-color: #f5faff;
+}
+
+.carId {
+  font-weight: 500;
+  color: #222;
+}
+
+.carNo {
+  background-color: #f1f3f5;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.carDriver {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.carStatus {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.carStatus::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #999; 
+}
+
+.carEarning {
+  font-weight: 500;
+  color: #111;
+}
+
+.green::before {
+  background-color: #22c55e; 
+}
+
+.blue::before {
+  background-color: #3b82f6; 
+}
+
+.red::before {
+  background-color: #ef4444; 
+}
